@@ -1,0 +1,17 @@
+[package]
+name = "scale_dependent_point_selection"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+description = "Efficient nearest-neighbor queries for more-important geographic points."
+readme = "README.md"
+repository = "https://github.com/HelloJowet/scale_dependent_point_selection"
+license = "Apache-2.0"
+keywords = ["geospatial", "rtree", "nearest-neighbor", "point-selection"]
+categories = ["algorithms", "science::geo"]
+
+[dependencies]
+geo = "0.33.1"
+geo-types = "0.7.20"
+geographiclib-rs = "0.2.7"
+rstar = "0.13.0"
