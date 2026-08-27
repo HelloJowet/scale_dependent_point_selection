@@ -1,6 +1,6 @@
 [package]
 name = "scale_dependent_point_selection"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2024"
 rust-version = "1.85"
 description = "Efficient nearest-neighbor queries for more-important geographic points."
@@ -11,7 +11,15 @@ keywords = ["geospatial", "rtree", "nearest-neighbor", "point-selection"]
 categories = ["algorithms", "science::geo"]
 
 [dependencies]
+anyhow = "1.0.99"
+clap = { version = "4.5.46", features = ["derive"] }
 geo = "0.33.1"
 geo-types = "0.7.20"
-geographiclib-rs = "0.2.7"
 rstar = "0.13.0"
+same-file = "1.0.6"
+serde_json = "1.0.143"
+tempfile = "3.21.0"
+
+[[bin]]
+name = "scale-dependent-point-selection"
+path = "src/main.rs"
